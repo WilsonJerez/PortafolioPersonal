@@ -14,12 +14,13 @@ coloque nas sessões indicadas*/
 body {    
     background-color: var(--cor-de-fundo) ;
     font-family: 'Raleway';
-    width: 360px;
+    width:100%
     display: flex;
     flex-direction: column;    
     font-size: 1rem;
     line-height:20px;
-    padding:10px 0px;    
+    padding-left: 10px;
+    padding-right: 10px;    
     
 }
 h1{
