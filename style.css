@@ -13,6 +13,7 @@ coloque nas sessões indicadas*/
 html{
     margin:0px;
     width: 100%;
+    box-sizing: border-box;
 }
 body {    
     background-color: var(--cor-de-fundo) ;
