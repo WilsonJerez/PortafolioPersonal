@@ -10,7 +10,9 @@ coloque nas sessões indicadas*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
 }
-
+html{
+    margin:0;
+}
 body {    
     background-color: var(--cor-de-fundo) ;
     font-family: 'Raleway';
@@ -19,6 +21,7 @@ body {
     font-size: 16px;
     line-height:20px;  
     grid-template-columns: 1fr;
+    
 }
 h1{
     font-size:1em;
