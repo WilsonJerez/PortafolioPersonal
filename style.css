@@ -23,6 +23,7 @@ body {
     font-size: 16px;
     line-height:20px;  
     grid-template-columns: 1fr;
+    max-width: 1080px;
     
 }
 h1{
@@ -69,12 +70,16 @@ h3{
     padding:10px;
     
 }
+.nav_var_img_prestentacion
+{
+    text-align: center;
+}
 .nav_foto{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin: 20px 0px;
-    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    margin: auto;
 }
 .nav_titulo{
     text-align: center;    
@@ -90,10 +95,14 @@ h3{
     flex-direction: row;    
     margin-bottom:10px;    
 }
+
 .nav_link{
     text-decoration: none;
     margin:1rem;
     color:var(--cor-de-link);
+}
+.nav_link:hover{
+    text-decoration: underline;
 }
 
 /*Sección Sobre mi*/
@@ -106,7 +115,7 @@ h3{
     margin-bottom: 10px; 
 }
 .sobremi_parrafo{
-    text-align:justify;  
+    text-align:justify;
     margin-bottom:10px;  
 }
 
@@ -125,20 +134,21 @@ h3{
 }
 .skills_box{
     background-color: #fff;
-    width: 150px;
-    height:112px;
-    padding:10px;
-    margin-top:15px;
-    margin-bottom: 15px;
+    width: 156px;
+    height:118px;
+    gap:8px;
+    margin-bottom: 16px;   
     display:flex;
     justify-content: center;
     align-items:center;
     flex-direction: column;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
 }
 .skills_box_img{
     width: auto;
     height: 50px;
-    margin:auto 0;   
+    margin:auto 0;
+      
 }
 .skills_box_descripcion{
     margin:auto;
@@ -151,12 +161,10 @@ h3{
     flex-wrap: wrap;
     justify-content:space-around;
     background-color: #eaf2fd;
-    
-    padding-bottom: 30px;
 }
 .academico_titulo{  
     padding-top: 30px;
-    padding-bottom:30px;
+    
     width: 100%;
     text-align: center;
 }
@@ -169,7 +177,8 @@ h3{
     display: grid;
     place-items:center;
     justify-content: center;
-    background-color: #fff;    
+    background-color: #fff;  
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);   
 }
 .academico_formacion_box_img{  
     display:flex;
@@ -203,9 +212,7 @@ h3{
     flex-direction: column;
     width: 300px;
     height: auto;
-    margin-top: 30px;
-    border-style: groove;
-    border-width: 1px;
+    margin-top: 30px;    
 }
 .Experiencia_tarjeta_tituloproyecto{
     margin-top:10px;
@@ -224,6 +231,9 @@ h3{
     padding: 10px;
     margin:15px;
     
+}
+.experiencia_tarjeta_img{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 /*Contacto*/
@@ -281,8 +291,8 @@ h3{
 
 .footer{
     padding: 1.5rem;
-   background-color: #fff;
-   text-align: center;
+    background-color: #fff;
+    text-align: center;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
@@ -293,38 +303,66 @@ Utiliza las referencias de los breakpoints @media abajo */
 @media (min-width: 768px) {
 
 /* Menú */
-
+body{
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+.nav_var_img_prestentacion
+{
+    display:flex;
+    flex-direction:row-reverse;    
+}
+.nav_presentacion{
+    padding-right: 32px;
+}
 /*title*/
 
 /*Skills*/
-
+.skills_box{
+    width: 224px;
+    height:118px;
+    gap:8px;
+}
 /*Hobbies*/
 
 /*Formación Académica*/
-
+.academico_formacion{
+    width: 224px;
+    height: auto;
+    gap:10px;
+    
+}
 /*Experiencia Profesional*/
-
+.experiencia_tarjeta{
+    width: auto;
+    height: auto;
+}
+.experiencia_tarjeta_img{
+    width: 704px;
+    height: auto;
+}
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
-
-/*Menu*/
-
-/*Titulo*/
-
-/*Sección sobre mi*/
-
-/*Skills*/
-
-/*Hobbies*/
- 
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
- /*Contacto*/
-
-/*Footer*/
-
+@media (min-width: 1080px) {
+body{
+    margin:0 auto !important;
+    float: none !important;
+}
+.experiencia{
+    justify-content: center;
+}
+.experiencia_tarjeta{
+    flex-direction: row;
+    align-items: center;
+}
+.Experiencia_tarjeta_tituloproyecto{
+    padding: 15px;
+}
+.experiencia_tarjeta_grupobtn{
+    display:flex;
+    flex-direction: column;
+}
+    
 }
