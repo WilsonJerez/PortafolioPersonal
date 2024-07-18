@@ -104,7 +104,10 @@ h3{
 .nav_link:hover{
     text-decoration: underline;
 }
-
+.nav_youtube{
+    height: 60;
+    width: 60;
+}
 /*Sección Sobre mi*/
 .sobremi{
     background-color: #eaf2fd;
